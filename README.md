@@ -1,4 +1,4 @@
 FACULDADE DE TECNOLOGIA SENAC GOIÁS
 
                                   PROJETO PLANO DE ENSINO
-Grupo: Arley Alex, Marcelo, Samily
+Grupo: Arley Alex, Marcelo, Samily, Bruno
