@@ -1,8 +1,0 @@
-﻿CREATE TABLE usuario (
-	id SERIAL PRIMARY KEY NOT NULL,
-	login VARCHAR(20) NOT NULL,
-	senha VARCHAR(50) NOT NULL,
-	apelido VARCHAR(60) NOT NULL,
-	sexo CHAR(1),
-	nivel CHAR(1)
-)
