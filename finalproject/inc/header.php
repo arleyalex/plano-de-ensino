@@ -27,7 +27,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="<?php echo BASEURL; ?>index.php" class="navbar-brand">SiPEWeb</a>
+          <a class="navbar-brand">SiPEWeb</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">          
@@ -35,9 +35,12 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Menu <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu">
-                    <li><a href="<?php echo BASEURL; ?>customers">Gerenciar Curso</a></li>
-                    <li><a href="<?php echo BASEURL; ?>customers/add.php">Incluir Curso</a></li>
+                <ul class="dropdown-menu">               
+                    <li><a href="<?php echo BASEURL; ?>inicio.php">Inicio</a></li>
+                    <li><a href="<?php echo BASEURL; ?>disciplina.php">Disciplina</a></li>
+                    <li><a href="<?php echo BASEURL; ?>curso.php">Curso</a></li>
+                    <li><a href="<?php echo BASEURL; ?>usuario.php">Usuario</a></li>
+                    <li><a href="<?php echo BASEURL; ?>logout.php">Sair</a></li>
                 </ul>
             </li>
           </ul>

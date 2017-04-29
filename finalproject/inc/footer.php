@@ -2,7 +2,7 @@
 
 	<hr>
 	<footer class="container">
-		<p>&copy;2016 - Projeto Final PHP - 2017/2</p>
+		<p align="center">&copy;2017 - Projeto Final PHP - SiPEWeb</p>
 	</footer>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

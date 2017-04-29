@@ -1,0 +1,13 @@
+/** O nome do banco de dados*/
+define ('DB_NAME', 'sipebd');
+
+/** Usuário do banco de dados MySQL */
+define ('DB_USER', 'sipe');
+
+/** Senha do banco de dados MySQL */
+define ('DB_PASSWORD', 'senac123');
+
+/** nome do host do MySQL */
+define ('DB_HOST', 'localhost');
+
+
