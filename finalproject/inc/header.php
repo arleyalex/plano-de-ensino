@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-Type" content="text/html; charset=iso-8859-1" />
     <title>SiPEWeb</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,11 +35,12 @@
                     Menu <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">               
-                    <li><a href="<?php echo BASEURL; ?>inicio.php">Inicio</a></li>
-                    <li><a href="<?php echo BASEURL; ?>disciplina.php">Disciplina</a></li>
-                    <li><a href="<?php echo BASEURL; ?>curso.php">Curso</a></li>
-                    <li><a href="<?php echo BASEURL; ?>usuario.php">Usuario</a></li>
-                    <li><a href="<?php echo BASEURL; ?>logout.php">Sair</a></li>
+                    <li><a href="<?php echo BASEURL; ?>./pagIniciais/inicio.php">Inicio</a></li>
+                    <li><a href="<?php echo BASEURL; ?>./pagIniciais/curso.php">Curso</a></li>
+                    <li><a href="<?php echo BASEURL; ?>./pagIniciais/disciplina.php">Disciplina</a></li>
+                    <li><a href="<?php echo BASEURL; ?>./pagIniciais/planEnsino.php">Plano de Ensino</a></li>
+                    <li><a href="<?php echo BASEURL; ?>./pagIniciais/usuario.php">Usuário</a></li>
+                    <li><a href="<?php echo BASEURL; ?>./index.php">Sair</a></li>
                 </ul>
             </li>
           </ul>
@@ -49,5 +49,3 @@
     </nav>
 
     <main class="container">
-	</body>
-</html>

@@ -1,11 +1,14 @@
 <?php
 
+$strConexao = "host=127.0.0.1 dbname=sipebd user=sipe password=senac123";
+$conDB = pg_connect($strConexao);
+
 /** caminho absoluto para a pasta do sistema **/
-/**if (!define('ABSPATH'))**/
+/**if (!define('ABSPATH'))*/
 	define ('ABSPATH', dirname('/xampp/htdocs/finalproject/index').'/');
 
 /** caminho no server para o sistema **/
-/**if ( !define ('BASEURL') )**/
+	/**if ( !define ('BASEURL') )*/
 	define ('BASEURL', '/finalproject/');
 	
 /** caminho do arquivo de banco de dados **/
