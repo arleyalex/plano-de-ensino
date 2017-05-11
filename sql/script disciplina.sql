@@ -1,4 +1,4 @@
-﻿CREATE TABLE curso (
+﻿CREATE TABLE disciplina (
 	codigo INT PRIMARY KEY NOT NULL,
 	nome VARCHAR (150) NOT NULL,
 	ch INT(60) NOT NULL,
