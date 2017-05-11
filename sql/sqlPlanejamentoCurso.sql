@@ -1,0 +1,4 @@
+CREATE TABLE Planejamento_Curso (
+	id INT PRIMARY KEY NOT NULL,
+	numero INT PRIMARY KEY NULL
+	)
