@@ -59,3 +59,11 @@ CREATE TABLE usuario (
 	nivel CHAR(1)
 )
 
+CREATE TABLE curso_disciplina (
+	numero int PRIMARY KEY NOT NULL,
+	codigo int PRIMARY KEY NOT NULL,
+	modulo char(1) NOT NULL,
+	
+)
+
+
