@@ -1,18 +1,64 @@
-CREATE DATABASE sipedb
-  WITH OWNER = postgres
+﻿CREATE DATABASE sipedb
+  WITH OWNER = sipe
        ENCODING = 'UTF8'
        TABLESPACE = pg_default
        LC_COLLATE = 'Portuguese_Brazil.1252'
        LC_CTYPE = 'Portuguese_Brazil.1252'
        CONNECTION LIMIT = -1;
 
+CREATE TABLE usuario (
+	id SERIAL PRIMARY KEY NOT NULL,
+	login VARCHAR(20) NOT NULL,
+	senha VARCHAR(50) NOT NULL,
+	apelido VARCHAR(60) NOT NULL,
+	sexo CHAR(1),
+	nivel CHAR(1)
+)
+
+CREATE TABLE disciplina (
+	codigo INT PRIMARY KEY NOT NULL,
+	nome VARCHAR (150) NOT NULL,
+	ch INT NOT NULL,
+	ementa VARCHAR(600) NOT NULL,
+	objetivo VARCHAR (600) NOT NULL,
+	bibliografia_basica VARCHAR (200) NOT NULL,
+	bibliografia_complementar VARCHAR (200) NOT NULL
+)
+
+CREATE TABLE planejamento (
+	id  INT PRIMARY KEY,
+	ano INT NOT NULL,
+	semestre INT NOT NULL,
+	data_inicio DATE NOT NULL,
+	data_termino DATE NOT NULL,
+	situacao CHAR (1)
+	
+)
+
+DROP TABLE professor;
+
+CREATE TABLE professor (
+	matricula INT PRIMARY KEY NOT NULL,
+	nome VARCHAR (60) NOT NULL,
+	cep INT NOT NULL,
+	logradouro VARCHAR(100) NOT NULL,
+	numero VARCHAR(15) NOT NULL,
+	complemento VARCHAR(100),
+	bairro VARCHAR(40) NOT NULL,
+	cidade VARCHAR(35) NOT NULL,
+	uf CHAR(2) NOT NULL,
+	id INT NOT NULL,
+	FOREIGN KEY (id) REFERENCES usuario(id)  
+)
+
 CREATE TABLE curso (
 	numero INT PRIMARY KEY NOT NULL,
 	nome VARCHAR (150) NOT NULL,
 	sigla CHAR(3) NOT NULL,
 	tipo CHAR(1) NOT NULL,
-	matricula INT FOREIGN KEY (matricula) REFERENCES (professor)
-	)
+	matricula INT,
+	FOREIGN KEY (matricula) REFERENCES professor
+)
 	
 CREATE TABLE planoensino (
 	codigo SERIAL PRIMARY KEY NOT NULL,
@@ -35,6 +81,9 @@ CREATE TABLE planoensino (
 	FOREIGN KEY (matricula_professor) REFERENCES professor(matricula),
 	matricula_coordenador INT,
 	FOREIGN KEY (matricula_coordenador) REFERENCES professor(matricula)
+<<<<<<< HEAD
+)
+=======
 )
 
 CREATE TABLE professor (
@@ -67,3 +116,4 @@ CREATE TABLE curso_disciplina (
 )
 
 
+>>>>>>> 94c571418ed3d5e04f90b1ec6ececb2ffbb3bba1
