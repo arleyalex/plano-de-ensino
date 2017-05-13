@@ -1,7 +1,16 @@
 <?php
+    $BANCO = ("host=localhost dbname=sipedb port=5432 user=sipe password=senac123");
+    $CONEXAO = pg_connect($BANCO);
 
-$strConexao = "host=127.0.0.1 dbname=sipebd user=sipe password=senac123";
-$conDB = pg_connect($strConexao);
+if (!$CONEXAO) {
+    echo 'Erro, banco de dados nao conectado!';
+} else {
+	$SQL = 
+	
+	
+pg_close($CONEXAO);
+
+
 
 /** caminho absoluto para a pasta do sistema **/
 /**if (!define('ABSPATH'))*/
