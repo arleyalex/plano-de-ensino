@@ -1,19 +1,3 @@
-<?php
-    $BANCO = ("host=localhost dbname=sipedb port=5432 user=sipe password=senac123");
-    $CONEXAO = pg_connect($BANCO);
-
-if (!$CONEXAO) {
-    echo 'Erro, banco de dados nao conectado!';
-} else {
-	$SQL = 
-	
-	
-pg_close($CONEXAO);
-?>
-
-
-
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta http-equiv="content-Type" content="text/html; charset=iso-8859-1" />
@@ -32,7 +16,8 @@ pg_close($CONEXAO);
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<hr />
-		<form class="form-horizontal col-md-offset-5" action="./pagIniciais/inicio.php">
+		<form class="form-horizontal col-md-offset-5"
+			action="./pagIniciais/inicio.php">
 			<div class="form-group">
 				<div class="col-sm-4">
 					<div class="input-group">
@@ -69,8 +54,9 @@ pg_close($CONEXAO);
 			</div>
 			<div class="form-group">
 				<div class="col-sm-3">
-					<a href="./pagCadastro/cadUsuario.php" class="text-left"><i>Criar usuário</i></a>
-					<br /> <a class="text-left"><i>Esqueci minha senha</i></a>
+					<a href="./pagCadastro/cadUsuario.php" class="text-left"><i>Criar
+							usuário</i></a> <br /> <a class="text-left"><i>Esqueci minha
+							senha</i></a>
 				</div>
 			</div>
 		</form>

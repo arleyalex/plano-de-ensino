@@ -1,18 +1,4 @@
-<?php
-    $BANCO = ("host=localhost dbname=sipedb port=5432 user=sipe password=senac123");
-    $CONEXAO = pg_connect($BANCO);
-
-if (!$CONEXAO) {
-    echo 'erro banco de dados nao conectado';
-} else {
-	$SQL = 
-	
-	
-pg_close($CONEXAO);
-?>
-
-
-<?php require_once DBAPI; ?>
+<?php require_once '../view/config.php'; ?>
 
 <?php include( HEADER_TEMPLATE ); ?>
 
@@ -22,12 +8,12 @@ pg_close($CONEXAO);
 <form class="col-md-offset-2" action="" method="post">
 	<div class="row">
 		<div class="form-group col-md-1">
-			<label for="codigo">Código</label> 
-			<input type="text" class="form-control" name="codigo">
+			<label for="codigo">Código</label> <input type="text"
+				class="form-control" name="codigo">
 		</div>
 		<div class="form-group col-md-7">
-			<label for="nome">Nome</label> 
-			<input type="text" class="form-control" name="nome">
+			<label for="nome">Nome</label> <input type="text"
+				class="form-control" name="nome">
 		</div>
 		<div class="form-group col-md-2">
 			<label for="cargahoraria">Carga Horaria</label> <input type="number"

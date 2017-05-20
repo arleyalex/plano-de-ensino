@@ -12,26 +12,24 @@
 	<div class="row">
 		<div class="form-group col-sd-4">
 			<div class="col-md-2">
-				<label for="curso">Curso</label> 
-					<select class="form-control">
+				<label for="curso">Curso</label> <select class="form-control">
 					<option>Curso 1</option>
 				</select>
 			</div>
 			<div class="col-md-2">
-				<label for="periodo">Período</label> 
-					<select class="form-control">
+				<label for="periodo">Período</label> <select class="form-control">
 					<option>1º</option>
 				</select>
 			</div>
 			<div class="col-md-2">
-				<label for="disciplina">Disciplina</label> 
-					<select class="form-control">
+				<label for="disciplina">Disciplina</label> <select
+					class="form-control">
 					<option>Exemplo</option>
 				</select>
 			</div>
 			<div class="col-md-2">
-				<label for="planodeensino">Plano de Ensino</label> 
-					<select class="form-control">
+				<label for="planodeensino">Plano de Ensino</label> <select
+					class="form-control">
 					<option>Opção 1</option>
 				</select>
 			</div>
