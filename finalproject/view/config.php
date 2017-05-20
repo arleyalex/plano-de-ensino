@@ -1,6 +1,13 @@
 <?php
     $BANCO = ("host=localhost dbname=sipedb port=5432 user=postgres password=senac123");
     $CONEXAO = pg_connect($BANCO);
+	
+if (!$CONEXAO) {
+    echo 'Erro, banco de dados nao conectado';
+} else {
+	echo 'Dados salvo com sucesso';
+pg_close($CONEXAO);
+}
 
 
 /** caminho absoluto para a pasta do sistema **/
