@@ -5,7 +5,7 @@
 if (!$CONEXAO) {
     echo 'Erro, banco de dados nao conectado';
 } else {
-	echo 'Dados salvo com sucesso';
+	echo 'Conexao ok';
 pg_close($CONEXAO);
 }
 
