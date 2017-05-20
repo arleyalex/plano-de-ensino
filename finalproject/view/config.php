@@ -1,4 +1,8 @@
 <?php
+    $BANCO = ("host=localhost dbname=sipedb port=5432 user=postgres password=senac123");
+    $CONEXAO = pg_connect($BANCO);
+
+
 /** caminho absoluto para a pasta do sistema **/
 /**if (!define('ABSPATH'))*/
 	define ('ABSPATH', dirname('/xampp/htdocs/finalproject/index').'/');
