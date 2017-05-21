@@ -12,7 +12,7 @@ pg_close($CONEXAO);
 
 /** caminho absoluto para a pasta do sistema **/
 /**if (!define('ABSPATH'))*/
-	define ('ABSPATH', dirname('/xampp/htdocs/finalproject/index').'/');
+	define ('ABSPATH', dirname('/wamp64/www/finalproject/index').'/');
 
 /** caminho no server para o sistema **/
 	/**if ( !define ('BASEURL') )*/
