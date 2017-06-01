@@ -1,10 +1,3 @@
-﻿CREATE DATABASE sipedb
-  WITH OWNER = sipe
-       ENCODING = 'UTF8'
-       TABLESPACE = pg_default
-       LC_COLLATE = 'Portuguese_Brazil.1252'
-       LC_CTYPE = 'Portuguese_Brazil.1252'
-       CONNECTION LIMIT = -1;
 
 CREATE TABLE usuario (
 	id SERIAL PRIMARY KEY NOT NULL,
@@ -34,8 +27,6 @@ CREATE TABLE planejamento (
 	situacao CHAR (1)
 	
 )
-
-DROP TABLE professor;
 
 CREATE TABLE professor (
 	matricula INT PRIMARY KEY NOT NULL,
@@ -81,39 +72,10 @@ CREATE TABLE planoensino (
 	FOREIGN KEY (matricula_professor) REFERENCES professor(matricula),
 	matricula_coordenador INT,
 	FOREIGN KEY (matricula_coordenador) REFERENCES professor(matricula)
-<<<<<<< HEAD
-)
-=======
-)
 
-CREATE TABLE professor (
-	nome VARCHAR (60) NOT NULL,
-	cep INT, NOT NULL,
-	logradouro VARCHAR(100) NOT NULL,
-	numero VARCHAR(15) NOT NULL,
-	complemento VARCHAR(100),
-    bairro VARCHAR(40) NOT NULL,
-	cidade VARCHAR(35) NOT NULL,
-	uf CHAR(2) NOT NULL,
-	id INT, NOT NULL,
-	FOREIGN KEY (id) REFERENCES usuario(id)  
-)
-
-CREATE TABLE usuario (
-	id SERIAL PRIMARY KEY NOT NULL,
-	login VARCHAR(20) NOT NULL,
-	senha VARCHAR(50) NOT NULL,
-	apelido VARCHAR(60) NOT NULL,
-	sexo CHAR(1),
-	nivel CHAR(1)
 )
 
 CREATE TABLE curso_disciplina (
-	numero int PRIMARY KEY NOT NULL,
-	codigo int PRIMARY KEY NOT NULL,
-	modulo char(1) NOT NULL,
+	modulo char(1) NOT NULL
 	
 )
-
-
->>>>>>> 94c571418ed3d5e04f90b1ec6ececb2ffbb3bba1
