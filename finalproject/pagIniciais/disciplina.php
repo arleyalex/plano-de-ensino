@@ -2,9 +2,6 @@
 
 <?php include( HEADER_TEMPLATE ); ?>
 
-
-
-
 <h1 align="center">SiPEWeb - Disciplina</h1>
 <hr />
 <div class="row col-md-offset-4">

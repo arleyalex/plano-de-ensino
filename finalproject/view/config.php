@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
     $BANCO = ("host=localhost dbname=sipedb port=5432 user=postgres password=senac123");
     $CONEXAO = pg_connect($BANCO);
 	
@@ -8,6 +9,10 @@ if (!$CONEXAO) {
 	echo 'Conexao ok';
 pg_close($CONEXAO);
 }
+=======
+$BANCO = "host=localhost dbname=sipedb user=sipe password=senac123";
+$CONEXAO = pg_connect($BANCO);
+>>>>>>> 53061dbd3c43ff07638e29410ed0a64ddac18cb0
 
 
 /** caminho absoluto para a pasta do sistema **/
